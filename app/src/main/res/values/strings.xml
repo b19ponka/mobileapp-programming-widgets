@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Widgets</string>
+    <string name="hello_app">Hello App!</string>
 </resources>
