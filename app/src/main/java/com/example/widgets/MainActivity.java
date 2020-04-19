@@ -15,8 +15,8 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     private String[] mountainNames = {"Matterhorn","Mont Blanc","Denali"};
-    //private String[] mountainLocations = {"Alps","Alps","Alaska"};
-    //private int[] mountainHeight = {4478,4808,6190};
+    private String[] mountainLocations = {"Alps","Alps","Alaska"};
+    private int[] mountainHeight = {4478,4808,6190};
     private ArrayList<String> listData=new ArrayList<>(Arrays.asList(mountainNames));
 
     @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(), mountainNames[i], Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), mountainNames[i]+" "+mountainLocations[i]+" "+mountainHeight[i]+"m", Toast.LENGTH_SHORT).show();
             }
         });
 
