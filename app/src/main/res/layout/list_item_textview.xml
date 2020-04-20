@@ -8,6 +8,4 @@
     android:textColor="#8f8"
     android:textAlignment="center"
     android:layout_gravity="center_horizontal"
-    android:layout_margin="20sp">
-
-</TextView>
+    android:layout_margin="20sp" />
